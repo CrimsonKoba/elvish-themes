@@ -10,8 +10,8 @@ var rprompt-segments-defaults = [ ]
   use str
   use path
 
-  use github.com/href/elvish-gitstatus/gitstatus
-  use github.com/zzamboni/elvish-modules/spinners
+  use github.com/CrimsonKoba/elvish-gitstatus/gitstatus
+  use github.com/CrimsonKoba/elvish-modules/spinners
 
   var prompt-segments = $prompt-segments-defaults
   var rprompt-segments = $rprompt-segments-defaults
