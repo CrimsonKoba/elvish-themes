@@ -294,11 +294,7 @@ var rprompt-segments-defaults = [ ]
       fd -H -I -t d '^.git$' ~ | each $path:dir~
     }
 
-if (has-env XDG_DATA_HOME) {
-    var summary-repos-file = $E:XDG_DATA_HOME/elvish/package-data/elvish-themes/chain-summary-repos.json
-} else {
-    var summary-repos-file = $E:HOME/.local/elvish/package-data/elvish-themes/chain-summary-repos.json
-}
+var summary-repos-file = $E:HOME/.local/share/elvish/package-data/elvish-themes/chain-summary-repos.json
 
   var summary-repos = []
 
