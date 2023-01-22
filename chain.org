@@ -187,8 +187,8 @@ Load the libraries we need.
 We use [[https://github.com/href/elvish-gitstatus][href's gitstatus]] library for the git functions.
 
 #+begin_src elvish
-  use github.com/href/elvish-gitstatus/gitstatus
-  use github.com/zzamboni/elvish-modules/spinners
+  use github.com/CrimsonKoba/elvish-gitstatus/gitstatus
+  use github.com/CrimsonKoba/elvish-modules/spinners
 #+end_src
 
 Set up the default values for the chains (all can be configured by assigning to the appropriate variable):
