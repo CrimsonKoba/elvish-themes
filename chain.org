@@ -660,7 +660,11 @@ Default setup function, assigning our functions to =edit:prompt= and =edit:rprom
   #+end_src
 - Read from a JSON file specified in =$chain:summary-repos-file=. Default value:
   #+begin_src elvish
-    var summary-repos-file = ~/.elvish/package-data/elvish-themes/chain-summary-repos.json
+if (has-env XDG_DATA_HOME) {
+    var summary-repos-file = $E:XDG_DATA_HOME/elvish/package-data/elvish-themes/chain-summary-repos.json
+} else {
+    var summary-repos-file = $E:HOME/.local/elvish/package-data/elvish-themes/chain-summary-repos.json
+}
   #+end_src
   The contents of this file can be manipulated using the =chain:add-summary-repo= and =chain:remove-summary-repo=.
 
