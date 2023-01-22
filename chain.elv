@@ -319,7 +319,7 @@ if (has-env XDG_DATA_HOME) {
     each {|r|
       try {
         cd $r
-        -parse-git &with-timestamp
+        -parse-git &with-timestame
         var status = [($segment[git-combined])]
         put [
           &repo= (tilde-abbr $r)
